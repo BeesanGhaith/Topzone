@@ -1,5 +1,9 @@
 // require express
 const express = require("express");
+
+// require the file to execute it
+const db = require("./database/db");
+
 // instantiate express
 const app = express();
 
