@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // connecting mongoose
-mongoose.connect("mongodb://localhost:27017/topzone").then(
+mongoose.connect(process.env.DB_URI).then(
   () => {
     console.log("DB Ready To Use");
   },

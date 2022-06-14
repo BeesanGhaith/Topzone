@@ -9,6 +9,7 @@ const login = (req, res) => {
   usersModel
     .findOne({ email })
     .then(async (result) => {
+      console.log("hhh");
       if (!result) {
         return res.status(404).json({
           success: false,
@@ -32,7 +33,7 @@ const login = (req, res) => {
           expiresIn: "60m",
         };
 
-        const token = await jwt.sign(payload, SECRET, options);
+        const token = await jwt.sign(payload, process.env.SECRET, options);
 
         res.status(200).json({
           success: true,
