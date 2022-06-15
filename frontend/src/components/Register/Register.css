@@ -1,91 +1,92 @@
 .div-register {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
-.input-register, .input-country {
-    border: none;
-    box-shadow: 2px 2px 4px rgb(189, 187, 187);
-    height: 7vh;
+.input-register,
+.input-country {
+  border: none;
+  box-shadow: 2px 2px 4px rgb(189, 187, 187);
+  height: 7vh;
 }
 
 .input-country {
-    padding-left: 40px;
-    outline: none;
-    width: 100%;
+  padding-left: 40px;
+  outline: none;
+  width: 100%;
 }
 
 .btn-register {
-    width: 50%;
-    background-color: blue;
-    border: none;
-    color: white;
-    height: 7vh;
-    font-weight: bold;
+  width: 50%;
+  background-color: blue;
+  border: none;
+  color: white;
+  height: 7vh;
+  font-weight: bold;
 }
 
 .form-check-label {
-    font-size: 0.8rem;
-    margin-top: 2px;
+  font-size: 0.8rem;
+  margin-top: 2px;
 }
 
 .label {
-    font-size: 0.8rem;
-    margin-top: 2px;
-    margin-left: -3px;
-    color: blue;
-    cursor: pointer;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  margin-left: -3px;
+  color: blue;
+  cursor: pointer;
 }
 
 .sign-in {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #flexCheckDefault {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .form-country {
-    position: relative;
+  position: relative;
 }
 
 .earth-icon {
-    position: absolute;
-    top: 25%;
-    margin-left: 5px;
-    margin-right: 8px;
+  position: absolute;
+  top: 25%;
+  margin-left: 5px;
+  margin-right: 8px;
 }
 
 .form-group-input {
-    width: 50%;
+  width: 50%;
 }
 
 @media (max-width: 450px) {
-    .div-register {
-        margin-top: 20%;
-    }
+  .div-register {
+    margin-top: 20%;
+  }
 
-    .div-form-register {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .form-group-input {
-        width: 80%;
-        margin-left: 40px;
-    }
+  .div-form-register {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .div-agree {
-        display: flex;
-        flex-direction: column;
-        gap: 3vh;
-        margin-left: 40px;
-    }
+  .form-group-input {
+    width: 80%;
+    margin-left: 40px;
+  }
 
-    .btn-register {
-        width: 90%;
-    }
+  .div-agree {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-left: 40px;
+  }
 
-    .input-country {
-        width: 800px;
-    }
+  .btn-register {
+    width: 90%;
+  }
+
+  .input-country {
+    width: 800px;
+  }
 }

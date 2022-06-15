@@ -4,8 +4,6 @@ import loginReducer from "./login/index";
 const reducers = combineReducers({ loginReducer });
 
 // Create Store
-const store = createStore(
-  reducers,
- );
+const store = createStore(reducers);
 
 export default store;

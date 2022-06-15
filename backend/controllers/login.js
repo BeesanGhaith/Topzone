@@ -9,7 +9,6 @@ const login = (req, res) => {
   usersModel
     .findOne({ email })
     .then(async (result) => {
-      console.log("hhh");
       if (!result) {
         return res.status(404).json({
           success: false,

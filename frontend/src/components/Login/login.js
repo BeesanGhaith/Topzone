@@ -32,7 +32,6 @@ function Login() {
         password,
       });
       if (res.data.success) {
-        console.log(res.data);
         setMessage("");
         localStorage.setItem("token", res.data.token);
         dispatch(login(res.data.token));

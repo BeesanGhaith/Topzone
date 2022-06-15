@@ -104,20 +104,20 @@ function Register() {
 
             <Form.Group className="form-country mt-4">
               <GiEarthAmerica className="earth-icon fs-2" />
-                <input
-                  className="input-country w-50"
-                  list="encodings"
-                  onChange={(e) => {
-                    setCountry(e.target.value);
-                  }}
-                  placeholder="Choose country"
-                  class="col-sm-6 custom-select custom-select-sm"
-                />
-                <datalist id="encodings">
-                  <option value="Jordan">Jordan</option>
-                  <option value="Egypt">Egypt</option>
-                  <option value="Syria">Syria</option>
-                </datalist>
+              <input
+                className="input-country w-50"
+                list="encodings"
+                onChange={(e) => {
+                  setCountry(e.target.value);
+                }}
+                placeholder="Choose country"
+                class="col-sm-6 custom-select custom-select-sm"
+              />
+              <datalist id="encodings">
+                <option value="Jordan">Jordan</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Syria">Syria</option>
+              </datalist>
             </Form.Group>
 
             <div className="div-agree d-flex justify-content-between mt-4">
@@ -154,7 +154,7 @@ function Register() {
               <button className="btn-register">Sign up</button>
             </div>
             <p className="mt-4 fw-bold">
-              Already have an account?
+              Already have an account?{" "}
               <Link to="/" className="sign-in">
                 Sign In
               </Link>

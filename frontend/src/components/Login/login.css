@@ -1,28 +1,28 @@
 .div-login {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 .input-login {
-    border: none;
-    box-shadow: 2px 2px 5px gray;
-    height: 7vh;
+  border: none;
+  box-shadow: 2px 2px 5px gray;
+  height: 7vh;
 }
 
 .btn-login {
-    background-color: blue;
-    border: none;
-    color: white;
-    width: 100%;
-    height: 7vh;
-    font-weight: bold;
+  background-color: blue;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 7vh;
+  font-weight: bold;
 }
 
 .sign-up {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media (max-width: 450px) {
-    .div-login {
-        margin-top: 30%;
-    }
+  .div-login {
+    margin-top: 30%;
+  }
 }
