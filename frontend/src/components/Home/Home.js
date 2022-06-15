@@ -1,17 +1,11 @@
 import "./Home.css";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { logout } from "../../reducer/login/index";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
   const dispatch = useDispatch();
-
-  const state = useSelector((state) => {
-    return {
-      isLoggedIn: state.loginReducer.isLoggedIn,
-    };
-  });
 
   const navigate = useNavigate();
 

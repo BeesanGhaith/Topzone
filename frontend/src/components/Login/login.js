@@ -7,7 +7,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { Alert, Container, Form } from "react-bootstrap";
 
 function Login() {
-  const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
@@ -32,12 +31,15 @@ function Login() {
         password,
       });
       if (res.data.success) {
+        setStatus(true);
         setMessage("");
         localStorage.setItem("token", res.data.token);
         dispatch(login(res.data.token));
+      navigate("/home");
       } else throw Error;
     } catch (error) {
       if (error.response && error.response.data) {
+        setStatus(false);
         setMessage("Error happened while Login, please try again");
         return setMessage(error.response.data.message);
       }

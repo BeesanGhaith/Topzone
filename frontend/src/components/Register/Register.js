@@ -21,7 +21,7 @@ function Register() {
     if (
       name &&
       email &&
-      password == confirmPassword &&
+      password === confirmPassword &&
       country &&
       agree &&
       privacy
@@ -48,7 +48,7 @@ function Register() {
       setStatus(false);
       setMessage("Please fill in all fields");
     }
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
       setStatus(false);
       setMessage("Password did not match");
     }
