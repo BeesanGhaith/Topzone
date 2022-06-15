@@ -4,7 +4,7 @@ import axios from "axios";
 import { login } from "../../reducer/login/index";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { Alert, Container, Form, Button } from "react-bootstrap";
+import { Alert, Container, Form } from "react-bootstrap";
 
 function Login() {
   const [userName, setUserName] = useState("");
